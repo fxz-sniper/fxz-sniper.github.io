@@ -1,41 +1,73 @@
-/* index - 文章聚合 */
-.post-title {
-  margin: 0.5em 0;
+.main ul {
+  list-style-type: none;
+  padding: 0;
+  padding-top: 4px;
 }
-.post-title > a {
-  font-weight: 400;
-  color: #444 !important;
+.main ul li {
+  position: relative;
+  padding: 30px 0 30px;
+  border-bottom: 1px solid #e6e6e6;
 }
-.post-atmain {
-  margin-left: -40px;
-  margin-right: -40px;
-  padding-left: 40px;
-  padding-right: 40px;
+.main ul li:first-child {
+  margin-top: -30px;
 }
-.post-atmain,
-.post-atmain .post-title {
-  transition: 0.25s;
+.main h2,
+.main h3 {
+  letter-spacing: 1px;
+  margin: 0;
+  text-transform: uppercase;
 }
-.post-atmain:hover {
-  background: #f0f0f0;
+.main h2 {
+  font-size: 20px;
+  letter-spacing: 1px;
+  margin-left: 120px;
 }
-.more {
-  font-size: 80%;
-  margin: auto;
-  display: block;
-  width: 120px;
-  letter-spacing: 2px;
-  border: 1px solid rgba(0,0,0,0);
+.main h2 a {
+  color: #444;
 }
-.more:hover {
-  border: 1px solid #9f563a;
-/* text-decoration: underline;	 */
+.main h2 a:hover {
+  color: #f33;
 }
-.more a {
-  color: #999 !important;
+.main h3 {
+  font-size: 13px;
+  color: #999;
+  position: absolute;
+  left: 0;
+  top: 33px;
 }
-.more:hover a {
-  color: #9f563a !important;
-  text-decoration: none;
+@media screen and (max-width: 420px) {
+  .main h2 {
+    font-size: 16px;
+    margin-left: 0;
+  }
+  .main h2 a:hover {
+    color: #f66;
+  }
+  .main h3 {
+    font-size: 11px;
+    position: static;
+    margin-bottom: 10px;
+  }
+  .main ul li {
+    padding: 18px 0 20px;
+  }
+  .main ul li:first-child {
+    margin-top: -35px;
+  }
 }
-/* index - 文章聚合 */
+
+#prev {
+  float: left;
+}
+
+.index-nav{
+  color: #999;
+  font-family: "Montserrat", "Helvetica Neue", "Hiragino Sans GB", "LiHei Pro", Arial, sans-serif;
+  letter-spacing: 1px;
+  border-bottom: 3px solid transparent;
+}
+
+.index-nav:hover {
+  color: #333;
+  border-bottom-color: #333;
+}

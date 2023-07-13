@@ -1,90 +1,85 @@
 body {
-  background: #fcfcfc;
-  margin: 0;
-  color: #444;
-  font-family: Georgia, Palatino, "Palatino Linotype", "Palatino LT STD", source-han-serif-sc, "Source Han Serif SC", "Source Han Serif CN", "Source Han Serif TC", "Source Han Serif TW", "Source Han Serif", "Songti SC", "Times New Roman", "PingFang SC", "Hiragino Sans GB", "Source Han Sans CN", "WenQuanYi Micro Hei", "Microsoft Yahei", Microsoft YaHei;
-  font-size: 100%;
-}
-a {
-  color: #9f563a;
-  text-decoration: none;
-}
-a:hover,
-a:active {
-  text-decoration: underline;
-}
-p {
-  line-height: 1.75;
-  display: block;
-  margin-block-start: 8px;
-  margin-block-end: 8px;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
-}
-pre,
-code {
-  background: #f3f3f3;
-  font-family: /*Menlo,*/ Monaco, Consolas, "Lucida Console", "Courier New", monospace;
-  font-size: 100%;
-}
-code {
-  padding: 2px 4px;
-  color: #b94a48;
-}
-pre {
-  padding: 8px;
-  overflow: auto;
-  max-height: 400px;
-}
-pre code {
-  padding: 3px;
-  color: #444;
-}
-blockquote {
-  margin: 1em 0;
-  padding: 0.5em 1.5em;
-  border-left: 4px solid #9f563a; /*#ddd;*/
+  font-family: "Roboto", "Helvetica Neue", "Hiragino Sans GB", "LiHei Pro", Arial, serif;
+  text-rendering: optimizelegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+  font-size: 16px;
+  word-spacing: 1px;
   color: #666;
-  background: rgba(159,86,58,0.03);
-}
-/*
-h1,h2,h3,h4,h5,h6 {
-	font-family: "Helvetica Neue",Helvetica,Arial,"PingFang SC","Hiragino Sans GB","WenQuanYi Micro Hei","Microsoft Yahei",sans-serif;
-}
-*/
-input[type="text"],
-input[type="email"],
-input[type="url"],
-input[type="password"],
-textarea {
-  padding: 5px;
-  border: 1px solid #e9e9e9;
-  width: 100%;
-  border-radius: 2px;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-textarea {
-  resize: vertical;
-}
-/*
-.post-meta a,.post-content a,.widget a,.comment-content a {
-	border-bottom: 1px solid #EEE;
+  margin: 0;
 }
 
-.post-meta a:hover,.post-content a:hover,.widget a:hover,.comment-content a:hover {
-	border-bottom-color: transparent;
+img {
+  border: none;
 }
-*/
-.browsehappy {
-  padding: 8px 0;
-  background: #fbe3e4;
-  color: #8a1f11;
+
+a {
+  color: #666;
+  text-decoration: none;
+  transition: color 0.2s ease, border-color 0.2s ease;
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+  -webkit-user-select: none;
+  -moz-user-focus: none;
+  -moz-user-select: none;
+}
+
+.header {
+  letter-spacing: 5px;
+  margin: 50px auto 15px;
   text-align: center;
 }
-.browsehappy a {
-  color: #8a1f11;
-  text-decoration: underline;
-  font-weight: bold;
+
+.header a {
+  font-size: 15px;
+  color: #444;
+}
+
+.links {
+  text-align: center;
+  font-family: "Roboto", "Helvetica Neue", "Hiragino Sans GB", "LiHei Pro", Arial, serif;
+  color: #999;
+  font-size: 24px;
+  margin: 0;
+}
+
+.links a {
+  cursor: pointer;
+  padding: 2px;
+  margin: 0 3px;
+  color: #bbb;
+}
+
+.links img {
+  width: 15px;
+  height: 15px;
+}
+
+.search-result, .search-input, .post-item, .header, h1, h2, h3, h4, h5, h6 {
+  font-family: "Montserrat", "Helvetica Neue", "Hiragino Sans GB", "LiHei Pro", Arial, sans-serif;
+  font-weight: 400;
+  color: #444;
+}
+
+.main {
+  max-width: 600px;
+  margin: 50px auto 0;
+  padding: 0 30px;
+  position: relative;
+  min-height: calc(100vh - 176px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 420px) {
+  .header {
+    margin: 40px auto 10px;
+  }
+  .header a {
+    font-size: 14px;
+  }
+  .main {
+    min-height: calc(100vh - 156px);
+  }
 }
