@@ -11,7 +11,7 @@
   
   <title>
     
-      Archives 
+      003-Develop-with-Tauri 
       
       
     
@@ -33,6 +33,10 @@
 
 
   
+
+  
+    
+<link rel="stylesheet" href="/css/post.css">
 
   
 
@@ -94,68 +98,47 @@
 
 
       <div class="main">
-        <!-- 归档页，展示本站所有文章，按照年份降序归类，url形式：https://yoursite/archives/ -->
+        <!-- 文章详情页，展示文章具体内容，url形式：https://yoursite/文章标题/ -->
+<!-- 同时为「标签tag」，「朋友friend」，「分类categories」，「关于about」页面的承载页面，具体展示取决于page.type -->
 
-<!-- last: 按年份把文章分组，当前遍历到的年份 -->
-<!-- now: 当前遍历到的文章的发布年份 -->
+<!-- LaTex Display -->
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+</script>
+<script>
+  MathJax = {
+    tex: {
+      inlineMath: [['$', '$'], ['\\(', '\\)']]
+    }
+  };
+</script>
 
-<div class="container archives">
-  <div class="post-list">
-    
-        <!-- 后续文章的发布年份呈现 -->
-        <div class="content-title">
-          <h2>
-            <span>2023</span>
-          </h2>
-        </div>
-      
-      <div class="post-item" title="003-Develop-with-Tauri">
-        <div class="time-m-d">07-20</div>
-        <div class="title">
-          <a href="/2023/07/20/003-Develop-with-Tauri/">
-            
-              <span>003-Develop-with-Tauri</span>
-            
-          </a>
-        </div>
-      </div>
-    
-      <div class="post-item" title="002-Beginning with Tauri">
-        <div class="time-m-d">07-18</div>
-        <div class="title">
-          <a href="/2023/07/18/002-Beginning-with-Tauri/">
-            
-              <span>002-Beginning with Tauri</span>
-            
-          </a>
-        </div>
-      </div>
-    
-      <div class="post-item" title="001-My firt hexo blog">
-        <div class="time-m-d">07-13</div>
-        <div class="title">
-          <a href="/2023/07/13/001-My-firt-hexo-blog/">
-            
-              <span>001-My firt hexo blog</span>
-            
-          </a>
-        </div>
-      </div>
-    
-      <div class="post-item" title="Hello World">
-        <div class="time-m-d">07-12</div>
-        <div class="title">
-          <a href="/2023/07/12/hello-world/">
-            
-              <span>Hello World</span>
-            
-          </a>
-        </div>
-      </div>
-    
+<div class="post">
+  <h3 class="date">
+    Jul 20, 2023
+  </h3>
+  <h1>
+    003-Develop-with-Tauri
+  </h1>
+  <div class="content markdown-body">
+    <h3 id="Create-an-application-with-tauri"><a href="#Create-an-application-with-tauri" class="headerlink" title="Create an application with tauri"></a>Create an application with tauri</h3><p>After configuring the environment for Tauri, using the npx command to create application:</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npx create-tauri-app</span><br></pre></td></tr></table></figure>
+
+<p>And then choose your own framework!</p>
+<p>For example, I chose Rust and Vanilla, developing in the vscode.</p>
+<p><img src="/003-Develop-with-Tauri.assets/image-20230721215115975.png" alt="image-20230721215115975"></p>
+<h3 id="Let’s-go"><a href="#Let’s-go" class="headerlink" title="Let’s go !"></a>Let’s go !</h3><p>After creating tauri app, you can run it in the terminal:</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cargo tauri dev</span><br></pre></td></tr></table></figure>
+
+
   </div>
+  
+    
+      <a id="older" class="blog-nav" href="/2023/07/18/002-Beginning-with-Tauri/">OLDER&nbsp;&gt;</a>
+      
+        
+            
 </div>
-
         <div class="footer">
   
     <div class="footer-more">

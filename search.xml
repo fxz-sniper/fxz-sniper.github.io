@@ -4,6 +4,44 @@
   
     
     <entry>
+      <title>003-Develop-with-Tauri</title>
+      <link href="/2023/07/20/003-Develop-with-Tauri/"/>
+      <url>/2023/07/20/003-Develop-with-Tauri/</url>
+      
+        <content type="html"><![CDATA[<h3 id="Create-an-application-with-tauri"><a href="#Create-an-application-with-tauri" class="headerlink" title="Create an application with tauri"></a>Create an application with tauri</h3><p>After configuring the environment for Tauri, using the npx command to create application:</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npx create-tauri-app</span><br></pre></td></tr></table></figure><p>And then choose your own framework!</p><p>For example, I chose Rust and Vanilla, developing in the vscode.</p><p><img src="/003-Develop-with-Tauri.assets/image-20230721215115975.png" alt="image-20230721215115975"></p><h3 id="Let’s-go"><a href="#Let’s-go" class="headerlink" title="Let’s go !"></a>Let’s go !</h3><p>After creating tauri app, you can run it in the terminal:</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cargo tauri dev</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> tauri, rust </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>002-Beginning with Tauri</title>
+      <link href="/2023/07/18/002-Beginning-with-Tauri/"/>
+      <url>/2023/07/18/002-Beginning-with-Tauri/</url>
+      
+        <content type="html"><![CDATA[<h3 id="一、Config-environments"><a href="#一、Config-environments" class="headerlink" title="一、Config environments"></a>一、Config environments</h3><ol><li><p>Build msvc</p><p>Get the msvc build tools from :</p><p>Config system path in windows such as :</p><p><em>%msvc%\VC\Tools\MSVC%version%\bin\Hostx64\x64</em></p></li><li><p>setup Rust-lang</p><p>Get the exe program from :</p><p><a href="https://www.rust-lang.org/learn/get-started">rust</a></p><p>and then setup.</p></li><li><p>setup webview2</p><p>If your os is windows10 or higher, ignore this step.</p></li><li><p>setup nodejs</p><p>download nodejs and setup.</p></li><li><p>setup some dependencies.</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_"># </span><span class="language-bash">setup tauri-cli</span></span><br><span class="line">cargo install tauri-cli</span><br><span class="line"><span class="meta prompt_"></span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">setup trunk</span></span><br><span class="line">cargo install trunk</span><br><span class="line"><span class="meta prompt_"></span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">setup</span> </span><br><span class="line">rustup target add wasm32-unknown-unknown</span><br></pre></td></tr></table></figure></li></ol>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> tauri, rust </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>001-My firt hexo blog</title>
       <link href="/2023/07/13/001-My-firt-hexo-blog/"/>
       <url>/2023/07/13/001-My-firt-hexo-blog/</url>
